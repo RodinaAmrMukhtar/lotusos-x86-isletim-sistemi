@@ -1,0 +1,2 @@
+Hello from FAT on a REAL OS disk!
+This is HELLO.TXT
