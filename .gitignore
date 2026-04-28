@@ -1,0 +1,22 @@
+# Build outputs
+build/
+*.o
+*.elf
+*.iso
+*.img
+*.bin
+*.sys
+
+# Generated app copy
+files/HELLO.ELF
+
+# Local Limine fallback
+limine/
+
+# Temporary/editor files
+*.save
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
