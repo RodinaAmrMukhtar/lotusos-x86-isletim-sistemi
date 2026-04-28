@@ -175,7 +175,7 @@ My Computer ekranı, FAT32 dosya sistemi üzerinde bulunan dosya ve klasörlerin
 
 <img src="./docs/screenshots/07-not-defteri.jpg" alt="LotusOS Not Defteri" width="800">
 
-Not Defteri uygulaması, grafik arayüz içinde metin düzenleme işlevini temsil eder. Kullanıcı girişinin pencere sistemiyle birlikte işlenmesi, caret yönetimi, metin yazma ve basit düzenleme işlemleri bu ekran üzerinden gösterilir. Bu özellik, LotusOS’un uygulama benzeri arayüz bileşenleri geliştirebildiğini ortaya koyar.
+Notpad uygulaması, grafik arayüz içinde metin düzenleme işlevini temsil eder. Kullanıcı girişinin pencere sistemiyle birlikte işlenmesi, caret yönetimi, metin yazma ve basit düzenleme işlemleri bu ekran üzerinden gösterilir. Bu özellik, LotusOS’un uygulama benzeri arayüz bileşenleri geliştirebildiğini ortaya koyar.
 
 ## Kurulum ve Çalıştırma
 
@@ -193,7 +193,7 @@ sudo apt install build-essential gcc-multilib g++-multilib nasm make xorriso mto
 ### 2. Depoyu klonlayın
 
 ```bash
-git clone https://github.com/kullanici-adiniz/lotusos-x86-isletim-sistemi.git
+git clone https://github.com/RodinaAmrMukhtar/lotusos-x86-isletim-sistemi.git
 cd lotusos-x86-isletim-sistemi
 ```
 
@@ -217,21 +217,6 @@ Limine yerel olarak indirildiyse onu da temizlemek için:
 make clean-limine
 ```
 
-## GitHub’a Yüklemeden Önce
-
-Bu proje zip dosyasında derleme çıktıları da bulunabilir. GitHub reposuna yüklemeden önce aşağıdaki dosya ve klasörlerin repoya eklenmemesi önerilir:
-
-```text
-build/
-limine/
-*.o
-*.iso
-*.img
-files/HELLO.ELF
-```
-
-Bu dosyalar derleme sırasında tekrar üretilebilir. Repoda kaynak kodların, `Makefile` dosyasının, boot yapılandırmalarının, kernel kaynaklarının, uygulama kaynaklarının ve README içindeki ekran görüntülerinin bulunması yeterlidir.
-
 ## Akademik Kazanımlar
 
 Bu proje aşağıdaki teknik konuları uygulamalı şekilde göstermektedir:
@@ -249,33 +234,6 @@ Bu proje aşağıdaki teknik konuları uygulamalı şekilde göstermektedir:
 - ELF yükleme ve kullanıcı modu uygulama çalıştırma
 - Grafik arayüz, pencere yönetimi ve tema sistemi
 - QEMU üzerinde işletim sistemi test etme
-
-## Geliştirilebilir Yönler
-
-- Çoklu kullanıcı veya oturum yönetimi
-- Daha gelişmiş dosya yöneticisi işlemleri
-- Pencere sistemi için daha kapsamlı sürükle-bırak desteği
-- Uygulamalar arası iletişim mekanizması
-- Daha gelişmiş süreç zamanlama algoritması
-- Komut satırı için daha fazla sistem aracı
-- Ağ desteği
-- Ses desteği
-- Daha kapsamlı hata yönetimi ve kernel log sistemi
-- UEFI desteğinin genişletilmesi
-
-## Repo Adı ve Açıklama Önerisi
-
-Önerilen repo adı:
-
-```text
-lotusos-x86-isletim-sistemi
-```
-
-GitHub açıklaması:
-
-```text
-C, C++ ve Assembly ile geliştirilen; x86 kernel, FAT32 dosya sistemi, terminal, pencere yöneticisi, tema desteği ve QEMU üzerinde çalışan akademik mini işletim sistemi projesi.
-```
 
 ## Lisans
 
